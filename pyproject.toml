@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "confluence_rag"
+version = "0.1.0"
+description = ""
+authors = ["Rishabh Jain"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.12, <3.13"
+boto3 = "^1.36.16"
+pandas = "^2.2.3"
+requests = "2.32.3"
+beautifulsoup4 = "4.13.3"
+numpy = "^2.2.3"
+scikit-learn = "^1.6"
+sentence-transformers = "^3.4"
+llama-index = ">=0.12.23"
+llama-index-embeddings-huggingface = ">=0.5.2"
+llama-index-llms-bedrock = ">=0.3.6"
+llama-index-embeddings-bedrock = ">=0.4.0"
+streamlit = ">=1.43.2"
+tqdm = ">=4.66.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+seaborn = ">=0.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
